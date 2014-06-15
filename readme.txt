@@ -5,6 +5,8 @@ Tags: CampTix, The Events Calendar, Meetups, WordCamp, tickets, events
 Requires at least: 3.8
 Tested up to: 3.9.1
 Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Making CampTix and The Events Calendar working in harmony for the benefit of your meetup group.
 
