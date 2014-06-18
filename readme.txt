@@ -8,7 +8,7 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Making CampTix and The Events Calendar working in harmony for the benefit of your meetup group.
+Making CampTix and The Events Calendar work in harmony for the benefit of your meetup group.
 
 == Description ==
 
@@ -43,7 +43,7 @@ Installing "CampTix & Events Calendar for Meetup Groups" can be done either by s
 
 I built these custom features for my local WordPress meetup group in Cape Town and thought it was worth sharing them for the benefit of other meetup groups around the world.
 
-= Can I request additional featurs? =
+= Can I request additional features? =
 
 Yes - by all means, please post on the support forum with your feature request and I'll see what I can do to accommodate them.
 

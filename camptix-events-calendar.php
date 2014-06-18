@@ -3,7 +3,7 @@
  * Plugin Name: CampTix & Events Calendar for Meetup Groups
  * Version: 1.0
  * Plugin URI: http://www.hughlashbrooke.com/
- * Description: Making CampTix and The Events Calendar working in harmony for the benefit of your meetup group.
+ * Description: Making CampTix and The Events Calendar work in harmony for the benefit of your meetup group.
  * Author: Hugh Lashbrooke
  * Author URI: http://www.hughlashbrooke.com/
  * Requires at least: 3.8
