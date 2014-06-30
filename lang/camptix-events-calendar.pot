@@ -2,134 +2,143 @@
 # This file is distributed under the same license as the CampTix & Events Calendar for Meetup Groups package.
 msgid ""
 msgstr ""
-"Project-Id-Version: CampTix & Events Calendar for Meetup Groups 1.0\n"
+"Project-Id-Version: CampTix & Events Calendar for Meetup Groups 1.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/camptix-events-calendar\n"
-"POT-Creation-Date: 2014-06-17 06:27:25+00:00\n"
+"POT-Creation-Date: 2014-06-30 17:55:19+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-06-17 HO:MI+ZONE\n"
-"Last-Translator: Hugh Lashbrooke <EMAIL@ADDRESS>\n"
-"Language-Team: en-GB <LL@li.org>\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: includes/class-camptix-events-calendar.php:134
-#: includes/class-camptix-events-calendar.php:136
-#: includes/class-camptix-events-calendar.php:448
+#: includes/class-camptix-events-calendar.php:138
+#: includes/class-camptix-events-calendar.php:140
+#: includes/class-camptix-events-calendar.php:452
 msgid "Sponsors"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:135
-#: includes/class-camptix-events-calendar.php:446
+#: includes/class-camptix-events-calendar.php:139
+#: includes/class-camptix-events-calendar.php:450
 msgid "Sponsor"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:137
+#: includes/class-camptix-events-calendar.php:141
 msgid "Search Sponsors"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:138
+#: includes/class-camptix-events-calendar.php:142
 msgid "All Sponsors"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:139
+#: includes/class-camptix-events-calendar.php:143
 msgid "Parent Sponsor"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:140
+#: includes/class-camptix-events-calendar.php:144
 msgid "Parent Sponsor:"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:141
+#: includes/class-camptix-events-calendar.php:145
 msgid "Edit Sponsor"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:142
+#: includes/class-camptix-events-calendar.php:146
 msgid "Update Sponsor"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:143
+#: includes/class-camptix-events-calendar.php:147
 msgid "Add New Sponsor"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:144
+#: includes/class-camptix-events-calendar.php:148
 msgid "New Sponsor Name"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:145
+#: includes/class-camptix-events-calendar.php:149
 msgid "Separate sponsors with commas"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:146
+#: includes/class-camptix-events-calendar.php:150
 msgid "Add or remove sponsors"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:147
+#: includes/class-camptix-events-calendar.php:151
 msgid "Choose from the most used sponsors"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:148
+#: includes/class-camptix-events-calendar.php:152
 msgid "No sponsors found."
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:171
+#: includes/class-camptix-events-calendar.php:175
 msgid "Logo"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:172
+#: includes/class-camptix-events-calendar.php:176
 msgid "The sponsor's company logo."
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:179
+#: includes/class-camptix-events-calendar.php:183
 msgid "Website"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:180
+#: includes/class-camptix-events-calendar.php:184
 msgid "The sponsor's website."
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:183
+#: includes/class-camptix-events-calendar.php:187
 msgid "Website URL"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:278
+#: includes/class-camptix-events-calendar.php:282
 msgid "Event Tickets"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:281
+#: includes/class-camptix-events-calendar.php:285
 msgid "Tickets:"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:290
+#: includes/class-camptix-events-calendar.php:294
 msgid "Select all the tickets for this event - these are used to display the attendees on the event page. Leave blank to hide the attendee list."
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:414
+#: includes/class-camptix-events-calendar.php:418
 msgid "Upload an image"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:414
+#: includes/class-camptix-events-calendar.php:418
 msgid "Use image"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:414
+#: includes/class-camptix-events-calendar.php:418
 msgid "Upload new image"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:415
+#: includes/class-camptix-events-calendar.php:419
 msgid "Remove image"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:486
+#: includes/class-camptix-events-calendar.php:490
 msgid "Website: %1$s"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:522
+#: includes/class-camptix-events-calendar.php:526
+#: templates/feed-attendees.php:13
 msgid "Attendees"
 msgstr ""
 
-#: includes/class-camptix-events-calendar.php:612
-#: includes/class-camptix-events-calendar.php:621
+#: includes/class-camptix-events-calendar.php:654
+#: includes/class-camptix-events-calendar.php:663
 msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: templates/feed-attendees.php:77
+msgid "%1$s has booked"
+msgstr ""
+
+#: templates/feed-attendees.php:83
+msgid " for %1$s"
 msgstr ""
 #. Plugin Name of the plugin/theme
 msgid "CampTix & Events Calendar for Meetup Groups"
@@ -140,7 +149,7 @@ msgid "http://www.hughlashbrooke.com/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Making CampTix and The Events Calendar working in harmony for the benefit of your meetup group."
+msgid "Making CampTix and The Events Calendar work in harmony for the benefit of your meetup group."
 msgstr ""
 
 #. Author of the plugin/theme

@@ -50,7 +50,7 @@ To make the attendees RSS feed only display attendees for a specific event, just
 
 = How do I customise the RSS feed? =
 
-Copy the `templates/feed-attendees.php` file into the root folder of your active theme (or child theme) and then edit it there. The plugin will use the theme RSS template over the default one if it exists.
+Copy the `templates/feed-attendees.php` file into the root folder of your active theme (or child theme) and then edit it there. If the RSS temmplate file exists in your theme then the plugin will use that one instead of the default.
 
 = Can I request additional features? =
 
