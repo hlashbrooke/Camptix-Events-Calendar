@@ -93,6 +93,7 @@ if( ! class_exists( 'CampTix_Events_Calendar' ) ) {
 			$this->dir = dirname( $this->file );
 			$this->assets_dir = trailingslashit( $this->dir ) . 'assets';
 			$this->assets_url = esc_url( trailingslashit( plugins_url( '/assets/', $this->file ) ) );
+			$this->template_path = trailingslashit( $this->dir ) . 'templates/';
 
 			$this->script_suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
@@ -101,6 +102,9 @@ if( ! class_exists( 'CampTix_Events_Calendar' ) ) {
 
 			// Register sponsor taxonomy
 			add_action('init', array( $this, 'register_taxonomy' ) );
+
+			// Register attendees feed
+			add_action( 'init', array( $this, 'attendees_feed' ) );
 
 			// Add custom fields to taxonomy
 			add_action( $this->_taxonomy . '_add_form_fields', array( $this, 'add_taxonomy_fields' ), 2, 1 );
@@ -539,6 +543,44 @@ if( ! class_exists( 'CampTix_Events_Calendar' ) ) {
 		} // End display_attendees ()
 
 		/**
+		 * Register attendees feed
+		 * @return void
+		 */
+		public function attendees_feed() {
+			add_feed( 'attendees', array( $this, 'attendees_feed_template' ) );
+		} // End attendees_feed ()
+
+		/**
+		 * Load attendees feed template
+		 * @return void
+		 */
+	    public function attendees_feed_template() {
+	    	global $wp_query;
+
+	    	// Prevent 404 on feed
+	    	$wp_query->is_404 = false;
+	    	status_header( 200 );
+
+	    	$file_name = 'feed-attendees.php';
+
+	    	$user_template_file = apply_filters( $this->_token . '_template_file', trailingslashit( get_template_directory() ) . $file_name, 'attendees' );
+
+			// Any functions hooked in here must NOT output any data
+			do_action( $this->_token . '_before_feed', 'attendees' );
+
+	    	// Load feed template from theme if it exists, otherwise use default plugin template
+	    	if( file_exists( $user_template_file ) ) {
+	    		require( $user_template_file );
+	    	} else {
+	    		require( $this->template_path . $file_name );
+	    	}
+
+	    	// Any functions hooked in here must NOT output any data
+	    	do_action( $this->_token . '_after_feed', 'attendees' );
+
+		} // End attendees_feed_template ()
+
+		/**
 		 * Load admin Javascript.
 		 * @access  public
 		 * @since   1.0.0
@@ -547,7 +589,7 @@ if( ! class_exists( 'CampTix_Events_Calendar' ) ) {
 		public function admin_enqueue_assets ( $hook = '' ) {
 
 			wp_register_script( $this->_token . '-admin', esc_url( $this->assets_url ) . 'js/admin' . $this->script_suffix . '.js', array( 'jquery' ), $this->_version );
-			wp_register_style( $this->token . '-admin', esc_url( $this->assets_url ) . 'css/admin.css', array(), $this->_version );
+			wp_register_style( $this->_token . '-admin', esc_url( $this->assets_url ) . 'css/admin.css', array(), $this->_version );
 
 			$screen = get_current_screen();
 
@@ -629,6 +671,8 @@ if( ! class_exists( 'CampTix_Events_Calendar' ) ) {
 		 */
 		public function install () {
 			$this->_log_version_number();
+			$this->attendees_feed();
+			flush_rewrite_rules();
 		} // End install()
 
 		/**
