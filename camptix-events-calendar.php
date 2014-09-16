@@ -7,7 +7,7 @@
  * Author: Hugh Lashbrooke
  * Author URI: http://www.hughlashbrooke.com/
  * Requires at least: 3.8
- * Tested up to: 3.9.1
+ * Tested up to: 4.0
  *
  * @package WordPress
  * @author Hugh Lashbrooke
@@ -26,7 +26,7 @@ require_once( 'includes/class-camptix-events-calendar.php' );
  * @return object CampTix_Events_Calendar
  */
 function CampTix_Events_Calendar () {
-	$instance = CampTix_Events_Calendar::instance( __FILE__, '1.0.0' );
+	$instance = CampTix_Events_Calendar::instance( __FILE__, '1.1.0' );
 	return $instance;
 }
 
