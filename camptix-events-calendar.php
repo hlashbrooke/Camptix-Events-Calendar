@@ -6,8 +6,8 @@
  * Description: Making CampTix and The Events Calendar work in harmony for the benefit of your meetup group.
  * Author: Hugh Lashbrooke
  * Author URI: http://www.hughlashbrooke.com/
- * Requires at least: 3.8
- * Tested up to: 4.0
+ * Requires at least: 4.0
+ * Tested up to: 4.1
  *
  * @package WordPress
  * @author Hugh Lashbrooke
